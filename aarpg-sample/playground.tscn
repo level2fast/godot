@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dnp03aax1dmi2"]
+
+[ext_resource type="Texture2D" uid="uid://ngjutt30ywkt" path="res://player/sprites/ExamplePlayerSprite.png" id="1_rupst"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_edjgo"]
+
+[node name="Playground" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("CircleShape2D_edjgo")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+texture_filter = 1
+position = Vector2(239, 126)
+texture = ExtResource("1_rupst")
+hframes = 21
